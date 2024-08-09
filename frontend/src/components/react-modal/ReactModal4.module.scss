@@ -1,0 +1,28 @@
+@import 'assets/sass';
+.modaldelete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    p {
+        font-weight: 700;
+        font-size: 20px;
+        width: 100%;
+        color: black;
+        text-align: center;
+    }
+
+    .button1 {
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        border: none;
+        color: $gray-000;
+        background-color: $main-color2;
+        margin-top: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

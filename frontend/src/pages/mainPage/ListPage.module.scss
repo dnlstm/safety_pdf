@@ -1,0 +1,146 @@
+@import 'assets/sass';
+
+.ListPage {
+    height: calc(100vh - 40px);
+    min-height: 600px;
+    background-color: #e3e3e320;
+    color: $table-color;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    animation: fade-top 0.5s ease-in-out;
+    box-shadow: 5px 5px 20px;
+    &__aside {
+        width: 300px;
+        background-color: rgba($gray-900, 0.6);
+        // background-color: rgba($gray-000, 0.9);
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        img {
+            width: 30px;
+            position: absolute;
+            top: 60px;
+            left: 85px;
+            animation: fade-top 0.5s ease-in-out;
+        }
+
+        &__title {
+            height: 66px;
+            border-radius: 10px;
+
+            h2 {
+                color: $title-color;
+
+                text-align: center;
+                line-height: 66px;
+                font-weight: 700;
+            }
+        }
+
+        &__nav {
+            height: calc(100% - 132px - 40px);
+            border-radius: 10px;
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+
+            > li,
+            .ListPage__aside__Navlink {
+                width: 96.5%;
+                color: $list-color;
+                border-radius: 10px 0 0 10px;
+                margin-top: 15px;
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                > ul {
+                    display: none;
+                }
+
+                &_1 {
+                    color: $list-color;
+                    border-radius: 10px 0 0 10px;
+                    height: 66px;
+                    margin-top: 15px;
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    transition: 0.2s;
+                    background-color: $gray-000;
+                    color: $gray-500;
+
+                    // height: 115px;
+
+                    > ul {
+                        width: 100%;
+                        color: $gray-400;
+                        margin-bottom: 50px;
+
+                        > li {
+                            margin-top: 10px;
+                            margin-left: 40px;
+
+                            &:hover {
+                                color: $gray-900;
+                            }
+                        }
+                    }
+
+                    svg {
+                        color: $main-color2;
+
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        color: $main-color2;
+                    }
+                }
+
+                svg {
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    color: $main-color2;
+                    background-color: $gray-000;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        &__login {
+            margin-right: 10px;
+            height: 66px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+
+            span {
+                color: $list-color;
+            }
+            svg {
+                color: $list-color;
+
+                margin-right: 10px;
+            }
+            // border-top: 1px solid $gray-600;
+        }
+    }
+
+    &__main {
+        width: calc(100% - 300px);
+        background-color: $gray-000;
+        border-radius: 0 10px 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+}

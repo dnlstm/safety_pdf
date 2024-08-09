@@ -1,0 +1,237 @@
+@import 'assets/sass';
+
+.PerformanceTestTableContainer {
+    display: grid;
+    margin-left: 1px;
+    margin-top: 2px;
+    border: solid black 1px;
+    gap: 1px;
+    background: black;
+    // padding: 10px;
+    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: repeat(3, 1fr);
+
+    // grid-template-columns: 20px repeat(5, 1fr);
+
+    grid-template-rows: 50px;
+
+    grid-template-areas:
+        'a a b b c c d d e e'
+        'f g h h i i j j k k'
+        'f g l l m m n n o o'
+        'f p q q r r s s t t'
+        'f p u u v v w w x x'
+        'f p y y z z aa aa ab ab';
+
+    input {
+        width: 60%;
+        outline: none;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: a;
+        background-color: aquamarine;
+    }
+    .b {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: b;
+        background-color: aquamarine;
+    }
+    .c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: c;
+        background-color: aquamarine;
+    }
+    .d {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: d;
+        background-color: aquamarine;
+    }
+    .e {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: e;
+        background-color: aquamarine;
+    }
+    .f {
+        display: flex;
+        writing-mode: vertical-lr;
+        justify-content: center;
+        align-items: center;
+
+        grid-area: f;
+        background-color: aquamarine;
+    }
+    .g {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: g;
+        background-color: aquamarine;
+    }
+    .h {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: h;
+    }
+    .i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: i;
+    }
+    .j {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: j;
+    }
+    .k {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: k;
+    }
+    .l {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: l;
+    }
+    .m {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: m;
+    }
+    .n {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: n;
+    }
+    .o {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: o;
+    }
+    .p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: p;
+        background-color: aquamarine;
+    }
+    .q {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: q;
+        background-color: white;
+    }
+    .r {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: r;
+        background-color: white;
+    }
+    .s {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: s;
+    }
+    .t {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        grid-area: t;
+    }
+    .u {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: u;
+        background-color: rgb(179, 246, 255);
+    }
+    .v {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: v;
+        background-color: rgb(179, 246, 255);
+    }
+    .w {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(179, 246, 255);
+        grid-area: w;
+    }
+    .x {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(179, 246, 255);
+        grid-area: x;
+    }
+    .y {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(179, 246, 255);
+        grid-area: y;
+    }
+    .z {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: z;
+        background-color: rgb(179, 246, 255);
+    }
+    .aa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(179, 246, 255);
+        grid-area: aa;
+    }
+    .ab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(179, 246, 255);
+        grid-area: ab;
+    }
+    // .PerformanceTestTable-title {
+    //     width: 148px;
+
+    //     background-color: blue;
+    // }
+}

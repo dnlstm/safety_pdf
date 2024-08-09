@@ -1,0 +1,200 @@
+@import 'assets/sass';
+
+.qq {
+    height: 98%;
+    // width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px 0 20px;
+    overflow: auto;
+    align-content: space-between;
+
+    button {
+        font-size: 0.825rem;
+        background-color: $gray-000;
+        color: $gray-900;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        border: 1px solid $gray-300;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+            color: $gray-000;
+            background-color: $main-color2;
+        }
+    }
+
+    .tt {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        button {
+            background-color: $gray-000;
+            color: $gray-900;
+            border: none;
+            border-radius: 5px;
+            padding: 0px 50px;
+            border: 1px solid $gray-300;
+            // margin-bottom: 10px;
+            transition: 0.3s;
+
+            &:hover {
+                color: $gray-000;
+                background-color: $main-color2;
+            }
+        }
+    }
+    .table_contain {
+        margin-top: 5px;
+        width: 100%;
+        height: 750px;
+
+        table {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px $gray-300 solid;
+            border-collapse: collapse;
+            thead {
+                position: sticky;
+                top: -20px;
+
+                z-index: 1;
+                background-color: $gray-000;
+                color: $gray-900;
+                tr {
+                    // width: 100%;
+                    // display: flex;
+                    // justify-content: space-between;
+
+                    th {
+                        border-right: 1px $gray-300 solid;
+                        border-bottom: 1px $gray-300 solid;
+                        height: 40px;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        line-height: 40px;
+
+                        &:hover {
+                            color: $gray-000;
+                            background-color: $main-color2;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    height: 39px;
+
+                    &:hover {
+                        transition: background-color 0.3s;
+                        color: $gray-000;
+                        background-color: $main-color;
+                    }
+
+                    td {
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        border-right: 1px $gray-300 solid;
+                        border-bottom: 1px $gray-300 solid;
+                        font-size: 0.825rem;
+                        max-width: 550px;
+                    }
+                    td.EvaluateResult {
+                        color: $gray-900;
+
+                        // background-color: $gray-000;
+                        cursor: pointer;
+
+                        &:hover {
+                            transition: background-color 0.3s;
+                            color: $gray-000;
+
+                            background-color: $main-color2;
+                        }
+                    }
+
+                    td.delete {
+                        height: 100%;
+                        color: $gray-900;
+                        // background-color: $gray-000;
+                        cursor: pointer;
+                        &:hover {
+                            transition: background-color 0.3s;
+                            color: $gray-000;
+
+                            background-color: $main-color2;
+                        }
+                    }
+                }
+            }
+
+            .resizer {
+                position: absolute;
+                opacity: 0;
+                // left: 0px;
+                right: 0;
+                top: 0;
+                width: 4px;
+                height: 100%;
+                background: rgb(167, 167, 167);
+                cursor: col-resize;
+                user-select: none;
+                touch-action: none;
+                border-radius: 6px;
+
+                &:active {
+                    // background: rgb(167, 167, 167);
+
+                    background: rgb(206, 206, 206);
+                }
+
+                &:hover {
+                    // background: rgb(167, 167, 167);
+                    background: rgb(206, 206, 206);
+                }
+            }
+
+            tr:nth-child(even) {
+                background-color: $gray-200;
+            }
+        }
+    }
+    // }}
+    .bb {
+        height: 30px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            font-weight: 600;
+        }
+
+        button {
+            background-color: $gray-000;
+            color: $gray-900;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 100px;
+            border: 1px solid $gray-300;
+            // min-height: 20px;
+            // min-width: 15px;
+            // margin-top: 10px;
+            transition: 0.3s;
+
+            &:hover {
+                color: $gray-000;
+                background-color: $main-color2;
+            }
+        }
+    }
+}

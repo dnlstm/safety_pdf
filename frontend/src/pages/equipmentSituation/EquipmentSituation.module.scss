@@ -1,0 +1,262 @@
+@import 'assets/sass';
+
+.EquipmentSituation {
+    color: $gray-900;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 95%;
+    height: 94%;
+
+    animation: fade-top 0.5s ease-in-out;
+    overflow: auto;
+
+    form {
+        width: 100%;
+        height: 100%;
+    }
+
+    > h2,
+    > h3 {
+        margin-top: 50px;
+        height: 50px;
+        background-color: $main-color2;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        color: $gray-000;
+        font-weight: 500;
+        border-radius: 4px 4px 0 0;
+    }
+
+    h2:nth-of-type(1) {
+        margin-top: 20px;
+    }
+
+    > h2 {
+        border-radius: 4px;
+    }
+
+    > h3 {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    button {
+        font-size: 1.25rem;
+        color: $gray-000;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(to right, $main-color, $main-color2);
+    }
+    .inputCenter {
+        height: 100%;
+        text-align: center;
+        outline: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .EquipmentSituation_slider_grid {
+        width: 100%;
+        margin: 10px auto;
+        display: grid;
+        text-align: center;
+
+        grid-template-columns: 50px 1fr 1fr 250px 250px 1fr;
+        grid-template-rows: 70px repeat(22, 27.5px);
+        grid-template-areas:
+            'a1 a4 a4 a31 a54 a77'
+            'a2 a5 a17 a32 a55 a78'
+            'a2 a5 a18 a33 a56 a79'
+            'a2 a5 a19 a34 a57 a80'
+            'a2 a5 a20 a35 a58 a81'
+            'a2 a6 a21 a36 a59 a82'
+            'a2 a6 a22 a37 a60 a83'
+            'a2 a7 a7 a38 a61 a84'
+            'a2 a8 a8 a39 a62 a85'
+            'a2 a9 a23 a40 a63 a86'
+            'a2 a9 a24 a41 a64 a87'
+            'a2 a9 a25 a42 a65 a88'
+            'a2 a9 a26 a43 a66 a89'
+            'a3 a10 a27 a44 a67 a90'
+            'a3 a10 a28 a45 a68 a91'
+            'a3 a10 a29 a46 a69 a92'
+            'a3 a10 a30 a47 a70 a93'
+            'a3 a11 a11 a48 a71 a94'
+            'a3 a12 a12 a49 a72 a95'
+            'a3 a13 a13 a50 a73 a96'
+            'a3 a14 a14 a51 a74 a97'
+            'a3 a15 a15 a52 a75 a98'
+            'a3 a16 a16 a53 a76 a99';
+
+        @for $i from 1 through 99 {
+            .a#{$i} {
+                grid-area: a#{$i};
+                border: 1px solid $gray-300;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .a1,
+        .a2,
+        .a3 {
+            color: $main-color2;
+
+            background-color: $main-color;
+
+            writing-mode: vertical-lr;
+        }
+
+        .a1,
+        .a4,
+        .a31,
+        .a54,
+        .a77 {
+            color: $gray-000;
+
+            background-color: $main-color2;
+        }
+    }
+
+    .EquipmentSituation_slider_grid2 {
+        width: 100%;
+        margin: 10px auto;
+        display: grid;
+        text-align: center;
+        grid-template-columns: 50px 1fr 1fr 250px 250px 1fr;
+        grid-template-rows: 70px repeat(29, 27.5px);
+        grid-template-areas:
+            'b1 b5 b5 b40 b70 b100'
+            'b2 b6 b6 b41 b71 b101'
+            'b2 b7 b7 b42 b72 b102'
+            'b2 b8 b8 b43 b73 b103'
+            'b2 b9 b9 b44 b74 b104'
+            'b2 b10 b10 b45 b75 b105'
+            'b2 b11 b11 b46 b76 b106'
+            'b2 b12 b12 b47 b77 b107'
+            'b2 b13 b13 b48 b78 b108'
+            'b3 b14 b15 b49 b79 b109'
+            'b3 b14 b16 b50 b80 b110'
+            'b3 b14 b17 b51 b81 b111'
+            'b3 b18 b19 b52 b82 b112'
+            'b3 b18 b20 b53 b83 b113'
+            'b3 b18 b21 b54 b84 b114'
+            'b3 b18 b22 b55 b85 b115'
+            'b3 b18 b23 b56 b86 b116'
+            'b3 b18 b24 b57 b87 b117'
+            'b3 b25 b26 b58 b88 b118'
+            'b3 b25 b27 b59 b89 b119'
+            'b4 b28 b28 b60 b90 b120'
+            'b4 b29 b29 b61 b91 b121'
+            'b4 b30 b32 b62 b92 b122'
+            'b4 b30 b33 b63 b93 b123'
+            'b4 b31 b34 b64 b94 b124'
+            'b4 b31 b35 b65 b95 b125'
+            'b4 b36 b36 b66 b96 b126'
+            'b4 b37 b37 b67 b97 b127'
+            'b4 b38 b38 b68 b98 b128'
+            'b4 b39 b39 b69 b99 b129';
+
+        @for $i from 1 through 130 {
+            .b#{$i} {
+                grid-area: b#{$i};
+                border: 1px solid $gray-300;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .b1,
+        .b2,
+        .b3,
+        .b4 {
+            color: $main-color2;
+
+            background-color: $main-color;
+
+            writing-mode: vertical-lr;
+        }
+
+        .b1,
+        .b5,
+        .b40,
+        .b70,
+        .b100 {
+            color: $gray-000;
+
+            background-color: $main-color2;
+        }
+    }
+
+    .EquipmentSituation_slider_grid3 {
+        width: 100%;
+        margin: 10px auto;
+        display: grid;
+        text-align: center;
+
+        grid-template-columns: 50px 1fr 1fr 250px 250px 1fr;
+        grid-template-rows: 70px repeat(23, 27.5px);
+        grid-template-areas:
+            'c1 c3 c3 c33 c57 c81'
+            'c2 c4 c4 c34 c58 c82'
+            'c2 c5 c6 c35 c59 c83'
+            'c2 c5 c7 c36 c60 c84'
+            'c2 c8 c8 c37 c61 c85'
+            'c2 c9 c9 c38 c62 c86'
+            'c2 c10 c10 c39 c63 c87'
+            'c2 c11 c12 c40 c64 c88'
+            'c2 c11 c13 c41 c65 c89'
+            'c2 c14 c15 c42 c66 c90'
+            'c2 c14 c16 c43 c67 c91'
+            'c2 c14 c17 c44 c68 c92'
+            'c2 c14 c18 c45 c69 c93'
+            'c2 c14 c19 c46 c70 c94'
+            'c2 c20 c21 c47 c71 c95'
+            'c2 c20 c22 c48 c72 c96'
+            'c2 c23 c23 c49 c73 c97'
+            'c2 c24 c25 c50 c74 c98'
+            'c2 c24 c26 c51 c75 c99'
+            'c2 c27 c28 c52 c76 c100'
+            'c2 c27 c29 c53 c77 c101'
+            'c2 c27 c30 c54 c78 c102'
+            'c2 c31 c31 c55 c79 c103'
+            'c2 c32 c32 c56 c80 c104';
+
+        @for $i from 1 through 110 {
+            .c#{$i} {
+                grid-area: c#{$i};
+                border: 1px solid $gray-300;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .c1,
+        .c2 {
+            color: $main-color2;
+
+            background-color: $main-color;
+
+            writing-mode: vertical-lr;
+        }
+
+        .c1,
+        .c3,
+        .c33,
+        .c57,
+        .c81 {
+            color: $gray-000;
+
+            background-color: $main-color2;
+        }
+    }
+}

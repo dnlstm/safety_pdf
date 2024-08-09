@@ -1,0 +1,369 @@
+@import 'assets/sass';
+
+.gnb {
+    width: 100%;
+    border-radius: 0 5px 0 0;
+    align-items: center;
+    height: 61px;
+    display: flex;
+    padding: 0 39px;
+    gap: 30px;
+    background-color: $gray-800;
+    color: $gray-000;
+    position: relative;
+
+    .active {
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 18.72px;
+
+        color: $gray-000;
+
+        background-color: $gray-500;
+    }
+
+    .normal {
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: $gray-400;
+        font-weight: 700;
+        font-size: 18.72px;
+
+        &:hover {
+            color: $gray-000;
+        }
+    }
+
+    .ggnb {
+        height: 61px;
+        line-height: 61px;
+        &:hover .active_water_in {
+            height: 80px;
+        }
+
+        .active_water {
+            font-size: 18.72px;
+            background-color: $gray-500;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 700;
+
+            color: $gray-000;
+        }
+
+        .normal_water {
+            font-size: 18.72px;
+
+            padding: 0 10px;
+            color: $gray-400;
+
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .active_water_in {
+            width: 140px;
+
+            background-color: $gray-800;
+            z-index: 2;
+            position: absolute;
+            top: 61.4px;
+            left: 325px;
+            // display: none;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.15s ease-in-out;
+
+            &:hover {
+                overflow: visible;
+            }
+            .water_in_1 {
+                height: 40px;
+                line-height: 40px;
+                &:hover .active_water_in_1 {
+                    height: 520px;
+                }
+
+                .active_waterin {
+                    width: 100%;
+                    display: inline-block;
+                    font-weight: 700;
+                    background-color: $gray-400;
+                    color: $gray-000;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:hover {
+                        background-color: $gray-500;
+                    }
+                }
+                .normal_waterin {
+                    width: 100%;
+                    display: inline-block;
+                    font-weight: 700;
+                    color: $gray-000;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:hover {
+                        background-color: $gray-500;
+                    }
+                }
+                .active_water_in_1 {
+                    z-index: 1;
+                    position: absolute;
+
+                    top: 0px;
+                    left: 140px;
+                    // display: none;
+                    height: 0;
+                    overflow: hidden;
+                    transition: height 0.3s ease-in-out;
+
+                    .water_top_1 {
+                        width: 310px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        background-color: $gray-800;
+
+                        &:hover {
+                            background-color: $gray-500;
+                        }
+
+                        .tactive1 {
+                            width: 100%;
+                            display: inline-block;
+                            font-weight: 700;
+                            background-color: $gray-400;
+                            color: $gray-000;
+                            text-align: left;
+                            padding-left: 10px;
+                            &:hover {
+                                background-color: $gray-500;
+                            }
+                        }
+                        .tnormal1 {
+                            width: 100%;
+                            display: inline-block;
+                            font-weight: 700;
+                            color: $gray-000;
+                            text-align: left;
+                            padding-left: 10px;
+                            &:hover {
+                                background-color: $gray-500;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .water_in_2 {
+                height: 40px;
+                line-height: 40px;
+                &:hover .active_water_in_2 {
+                    height: 240px;
+                }
+                .active_waterin2 {
+                    width: 100%;
+                    display: inline-block;
+                    font-weight: 700;
+                    background-color: $gray-400;
+                    color: $gray-000;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:hover {
+                        background-color: $gray-500;
+                    }
+                }
+                .normal_waterin2 {
+                    width: 100%;
+                    display: inline-block;
+                    // border-radius: 5px;
+                    font-weight: 700;
+                    color: $gray-000;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:hover {
+                        background-color: $gray-500;
+                    }
+                }
+                .active_water_in_2 {
+                    z-index: 1;
+                    position: absolute;
+
+                    top: 0px;
+                    left: 140px;
+                    // display: none;
+                    height: 0;
+                    overflow: hidden;
+                    transition: height 0.3s ease-in-out;
+
+                    .water_top_2 {
+                        width: 310px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        background-color: $gray-800;
+
+                        &:hover {
+                            background-color: $gray-500;
+                        }
+
+                        .tactive2 {
+                            width: 100%;
+                            display: inline-block;
+                            font-weight: 700;
+                            background-color: $gray-400;
+                            color: $gray-000;
+                            text-align: left;
+                            padding-left: 10px;
+                            &:hover {
+                                background-color: $gray-500;
+                            }
+                        }
+                        .tnormal2 {
+                            width: 100%;
+                            display: inline-block;
+                            // border-radius: 5px;
+                            font-weight: 700;
+                            color: $gray-000;
+                            text-align: left;
+                            padding-left: 10px;
+                            &:hover {
+                                background-color: $gray-500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ggnb2 {
+        height: 61px;
+        line-height: 61px;
+        &:hover .active_gas_in {
+            // display: block;
+            height: 40px;
+        }
+
+        .active_gas {
+            font-size: 18.72px;
+            background-color: $gray-500;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 700;
+
+            color: $gray-000;
+        }
+
+        .normal_gas {
+            font-size: 18.72px;
+
+            padding: 0 10px;
+            color: $gray-400;
+
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .active_gas_in {
+            width: 140px;
+
+            background-color: $gray-800;
+            z-index: 2;
+            position: absolute;
+            top: 61.4px;
+            left: 472px;
+            // display: none;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.15s ease-in-out;
+
+            &:hover {
+                overflow: visible;
+            }
+            .gas_in_1 {
+                height: 40px;
+                line-height: 40px;
+                &:hover .active_gas_in_1 {
+                    height: 200px;
+                }
+                .active_gasin {
+                    width: 100%;
+                    display: inline-block;
+                    font-weight: 700;
+                    background-color: $gray-400;
+                    color: $gray-000;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:hover {
+                        background-color: $gray-500;
+                    }
+                }
+                .normal_gasin {
+                    width: 100%;
+                    display: inline-block;
+                    // border-radius: 5px;
+                    font-weight: 700;
+                    color: $gray-000;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:hover {
+                        background-color: $gray-500;
+                    }
+                }
+                .active_gas_in_1 {
+                    z-index: 1;
+                    position: absolute;
+
+                    top: 0px;
+                    left: 140px;
+                    // display: none;
+                    height: 0;
+                    overflow: hidden;
+                    transition: height 0.3s ease-in-out;
+
+                    .gas_top_1 {
+                        width: 310px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        background-color: $gray-800;
+
+                        &:hover {
+                            background-color: $gray-500;
+                        }
+
+                        .tactive3 {
+                            width: 100%;
+                            display: inline-block;
+                            font-weight: 700;
+                            background-color: $gray-400;
+                            color: $gray-000;
+                            text-align: left;
+                            padding-left: 10px;
+                            &:hover {
+                                background-color: $gray-500;
+                            }
+                        }
+                        .tnormal3 {
+                            width: 100%;
+                            display: inline-block;
+                            // border-radius: 5px;
+                            font-weight: 700;
+                            color: $gray-000;
+                            text-align: left;
+                            padding-left: 10px;
+                            &:hover {
+                                background-color: $gray-500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

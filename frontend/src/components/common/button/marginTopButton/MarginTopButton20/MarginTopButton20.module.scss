@@ -1,0 +1,36 @@
+@import 'assets/sass';
+
+.MarginTopButton {
+    position: relative;
+
+    .MarginTopButton20 {
+        @include marginTop(20px);
+        padding-right: 150px;
+    }
+    .errors {
+        margin: 5px 0 0 20px;
+        color: red;
+        font-size: 0.875rem;
+        position: absolute;
+        top: 27px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &_text {
+            // position: absolute;
+            margin-right: 5px;
+            display: none;
+            border: 1px solid red;
+            padding: 5px;
+            z-index: 10;
+        }
+
+        &:hover {
+            .errors_text {
+                display: block;
+            }
+        }
+    }
+}

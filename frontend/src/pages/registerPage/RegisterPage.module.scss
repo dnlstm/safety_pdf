@@ -1,0 +1,57 @@
+@import 'assets/sass';
+
+.RegisterPage {
+    width: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fade-top 0.5s ease-in-out;
+    background-color: $gray-000;
+    color: $gray-900;
+
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+
+    form {
+        width: 100%;
+    }
+
+    .home {
+        font-size: 20px;
+        right: 8px;
+        top: 0;
+        position: absolute;
+    }
+
+    .errors {
+        margin-top: -32px;
+        color: red;
+        font-weight: 600;
+        font-size: 0.875rem;
+        position: absolute;
+        right: 50px;
+    }
+
+    .RegisterPage__button {
+        font-size: 1rem;
+        color: $gray-000;
+
+        width: 100%;
+        background-color: $gray-800;
+
+        height: 50px;
+        border-radius: 25px;
+        border: none;
+        margin-top: 20px;
+        &:hover {
+            background-color: $main-color2;
+            color: $gray-000;
+        }
+    }
+}

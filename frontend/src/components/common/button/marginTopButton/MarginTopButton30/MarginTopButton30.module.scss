@@ -1,0 +1,6 @@
+@import 'assets/sass';
+
+.MarginTopButton30 {
+    @include marginTop(30px);
+    padding-right: 150px;
+}

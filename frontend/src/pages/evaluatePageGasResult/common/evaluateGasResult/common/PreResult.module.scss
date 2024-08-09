@@ -1,0 +1,241 @@
+@import 'assets/sass';
+
+.EvaluateGasResult {
+    width: 100%;
+    height: 92%;
+    animation: fade-top 0.5s ease-in-out;
+    // background-color: rgb(3, 70, 47);
+
+    > h2 {
+        margin-top: 20px;
+
+        text-align: center;
+
+        font-weight: 700;
+    }
+
+    textarea {
+        width: 90%;
+        height: 200px;
+        resize: none;
+        outline: none;
+        border: none;
+        padding: 10px;
+        border: 1px solid $gray-300;
+    }
+    &_slider {
+        color: black;
+        width: 97%;
+        margin: 10px auto 10px;
+        height: 100%;
+        overflow: auto;
+
+        .modal {
+            animation: fade-top 0.3s ease-in-out;
+            width: 200px;
+            height: 100px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border-radius: 8px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+
+            &::before {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                top: -452px;
+                right: -910px;
+                width: 2020px;
+                height: 1100px;
+                background-color: rgba($color: #000, $alpha: 0.8);
+            }
+
+            p {
+                width: 100%;
+
+                text-align: center;
+                color: $gray-900;
+
+                &::before {
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    background-color: #fff;
+                    top: -25px;
+                    right: -10px;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 150px;
+                }
+            }
+
+            button {
+                width: 65px;
+                height: 40px;
+                margin-right: 10px;
+                margin-left: 10px;
+                background-color: $main-color2;
+                color: $gray-000;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:nth-child(3) {
+                    background-color: $gray-400;
+                }
+            }
+        }
+
+        &_wrap1 {
+            width: 100%;
+            display: flex;
+
+            &_left {
+                line-height: 1.4;
+
+                width: 10%;
+                background-color: $main-color2;
+                color: $gray-000;
+                display: flex;
+                justify-content: center;
+                border: 1px solid $gray-300;
+                align-items: center;
+                text-align: center;
+                position: relative;
+
+                .button1 {
+                    position: absolute;
+                    color: white;
+                    padding: 5px;
+                    background-color: transparent;
+                    border-radius: 4px;
+                    top: 180px;
+                    cursor: pointer;
+
+                    background-color: $gray-300;
+                    color: black;
+                }
+                .button2 {
+                    position: absolute;
+                    color: white;
+                    padding: 5px;
+                    background-color: transparent;
+                    border-radius: 4px;
+                    top: 180px;
+                    cursor: pointer;
+
+                    background-color: $gray-300;
+                    color: black;
+                }
+            }
+
+            &_rightP {
+                width: 90%;
+                height: 329px;
+                display: flex;
+                position: relative;
+                .p1 {
+                    font-size: 20px;
+                    padding: 5px;
+                    position: absolute;
+                    right: 50%;
+                    top: -5px;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+                .p2 {
+                    font-size: 20px;
+
+                    padding: 5px;
+                    position: absolute;
+                    right: 0;
+                    cursor: pointer;
+                    top: -5px;
+                    z-index: 1;
+                }
+
+                > label {
+                    width: 50%;
+                    height: 100%;
+                    position: relative;
+                    border: 1px solid $gray-300;
+
+                    > input[type='file'] {
+                        display: none; // 숨김 처리
+                    }
+
+                    .img1 {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        padding: 1px;
+                        left: 0;
+                        top: 0;
+                    }
+                    .img2 {
+                        padding: 1px;
+                        height: 100%;
+
+                        position: absolute;
+                        width: 100%;
+                        right: 0;
+                        top: 0;
+                    }
+                    > h3 {
+                        width: 100%;
+                        height: 100%;
+                        color: $gray-400;
+                        text-align: center;
+                        line-height: 329px;
+                        &:hover {
+                            color: $gray-900;
+                        }
+                    }
+                }
+            }
+
+            &_right {
+                width: 90%;
+
+                > input {
+                    padding: 10px;
+
+                    width: 100%;
+                    border: 1px solid $gray-300;
+                    line-height: 1.7;
+                    white-space: pre-wrap;
+                    outline: none;
+                }
+
+                > p {
+                    padding: 10px;
+                    border: 1px solid $gray-300;
+                    line-height: 1.7;
+                    white-space: pre-wrap;
+                    height: 100%;
+                }
+
+                > img {
+                    border: 1px solid $gray-300;
+                    width: 50%;
+                }
+            }
+        }
+        .EvaluateGasResult_button {
+            font-size: 1.25rem;
+            color: $gray-000;
+            font-weight: 700;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to right, $main-color, $main-color2);
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+    }
+}

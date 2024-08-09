@@ -1,0 +1,42 @@
+@import 'assets/sass';
+
+$green: #99f8b959;
+$yellow: #fcfab4;
+$white: #ffffff;
+
+.PerformanceTestChartIn2 {
+    display: flex;
+
+    .PerformanceTestChartTable {
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 413px;
+
+        padding: 15px;
+        border: 1px solid $gray-300;
+
+        .PerformanceTestChartChart {
+            width: 835px;
+
+            height: 350px;
+            border: 1px solid black;
+
+            .PerformanceTestChartChartbox {
+                margin-top: 5px;
+                text-align: center;
+            }
+        }
+        .PerformanceTestChartChart2 {
+            width: 835px;
+
+            height: 350px;
+            border: 1px solid black;
+            border-left: none;
+            .PerformanceTestChartChartbox2 {
+                margin-top: 5px;
+                text-align: center;
+            }
+        }
+    }
+}

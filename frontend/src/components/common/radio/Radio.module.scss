@@ -1,0 +1,33 @@
+@import 'assets/sass';
+
+.radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+
+    &:hover {
+        span {
+            text-decoration: underline;
+        }
+    }
+}
+
+.radioInput {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-right: 5px;
+
+    &:checked {
+        background-color: #007bff;
+    }
+}
+
+span {
+    margin-left: 5px;
+}

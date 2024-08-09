@@ -1,0 +1,185 @@
+@import 'assets/sass';
+
+.EvaluateModal__isclose {
+    font-size: 20px;
+    position: absolute;
+    // width: 20px;
+    text-align: right;
+    top: -3px;
+    right: 3px;
+    color: $gray-900;
+    // right: 5px;
+    cursor: pointer;
+    background-color: $gray-000;
+}
+
+.EvaluateModal {
+    color: $gray-900;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px auto;
+    width: 95%;
+    form {
+        width: 100%;
+        .h3 {
+            font-weight: 500;
+            margin-top: 20px;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            background-color: $main-color2;
+            color: $gray-000;
+            text-align: center;
+            > p {
+                position: absolute;
+                padding: 10px;
+                border-radius: 10px;
+                text-align: center;
+                right: -5px;
+                top: 30px;
+                color: $gray-900;
+                cursor: pointer;
+                z-index: 1;
+            }
+        }
+    }
+
+    button {
+        font-size: 1.25rem;
+        color: $gray-000;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(to right, $main-color, $main-color2);
+    }
+
+    > h2,
+    > h3 {
+        margin-top: 40px;
+        height: 40px;
+        background-color: $main-color2;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        color: $gray-000;
+        font-weight: 500;
+        border-radius: 4px 4px 0 0;
+    }
+
+    h2:nth-of-type(1) {
+        margin-top: 20px;
+    }
+
+    > h2 {
+        border-radius: 4px;
+    }
+
+    > h3 {
+        margin-top: 20px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    &__info1 {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        height: 40px;
+        line-height: 40px;
+        &__1 {
+            width: 15%;
+            text-align: center;
+            color: $main-color2;
+
+            background-color: $main-color;
+        }
+        &__2 {
+            width: 85%;
+            border: 1px $main-color2 solid;
+            border-left: none;
+            border-radius: 0 4px 4px 0;
+
+            padding-left: 5px;
+            outline: none;
+        }
+    }
+    &__info2 {
+        margin-top: 10px;
+
+        width: 50%;
+        display: flex;
+
+        height: 40px;
+        line-height: 40px;
+
+        &__1 {
+            width: 30%;
+            text-align: center;
+            background-color: $main-color;
+            color: $main-color2;
+        }
+        &__2 {
+            width: 70%;
+            border: 1px $main-color2 solid;
+            border-radius: 0 4px 4px 0;
+
+            padding-left: 5px;
+            border-left: none;
+
+            &_1,
+            &_3,
+            &_5 {
+                width: 70%;
+                border: 1px $main-color2 solid;
+                padding-left: 5px;
+                border-left: none;
+                border-right: none;
+            }
+        }
+    }
+
+    &_picture {
+        width: 100%;
+        height: 287px;
+        border: 1px $main-color2 solid;
+        border-radius: 0 0 4px 4px;
+    }
+
+    .EvaluateModal_picture2 {
+        display: inline-block;
+        text-align: center;
+        line-height: 500px;
+        width: 100%;
+        height: 500px;
+        border: 1px $main-color2 solid;
+        border-radius: 0 0 4px 4px;
+        position: relative;
+        cursor: pointer;
+
+        > input[type='file'] {
+            display: none; // 숨김 처리
+        }
+
+        > img {
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            left: 0px;
+            top: 0;
+        }
+
+        > h3 {
+            color: $gray-400;
+
+            &:hover {
+                color: $gray-900;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.text {
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    width: 150px;
+    height: 70px;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    color: rgb(47, 255, 193);
+    border: rgb(47, 255, 193) 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    &:hover {
+        box-shadow: 0 0 10px 5px rgba(247, 255, 193, 0.5);
+    }
+
+    .button2 {
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+        border: none;
+        background: transparent;
+        color: rgb(47, 255, 193);
+        border: rgb(47, 255, 193) 1px solid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        &:hover {
+            background-color: rgb(255, 255, 255, 0.6);
+        }
+    }
+}

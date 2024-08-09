@@ -1,0 +1,13 @@
+@import 'assets/sass';
+
+.PerformanceTestChartChart {
+    width: 50%;
+
+    height: 350px;
+    border: 1px solid $gray-300;
+
+    .PerformanceTestChartChartbox {
+        margin-top: 5px;
+        text-align: center;
+    }
+}

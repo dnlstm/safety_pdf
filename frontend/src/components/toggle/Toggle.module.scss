@@ -1,0 +1,35 @@
+.Toggle {
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .toggleButton {
+        display: block;
+        width: 50px;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 15px;
+        cursor: pointer;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 26px;
+            height: 26px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+    }
+
+    input[type='checkbox']:checked + .toggleButton::before {
+        transform: translateX(20px);
+    }
+
+    input[type='checkbox']:checked + .toggleButton {
+        background-color: #4caf50;
+    }
+}
