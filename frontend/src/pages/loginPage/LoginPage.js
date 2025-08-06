@@ -38,7 +38,7 @@ const LoginPage = () => {
     return (
         <div className={styles.loginPage__wrap}>
             <img src={mark} alt="" />
-            <h2>공간안전인증원</h2>
+            <h2>PDF 보고서 생성 프로그램</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <MarginTopButton20 placeholder="아이디" register={register} name="id" errors={errors.id?.message} />
                 {/* {errors.id?.message && (

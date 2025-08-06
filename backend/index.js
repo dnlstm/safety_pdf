@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(
     cors({
-        origin: 'http://localhost:3000', // 프론트엔드 주소
+        origin: 'http://localhost:3000',
         credentials: true, // 자격 증명 허용
         methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'], // 허용할 메소드 설정
         allowedHeaders: ['Content-Type', 'Authorization'] // 허용할 헤더 설정
@@ -47,7 +47,7 @@ app.use(
 );
 app.options('*', cors());
 
-// app.use('/img', express.static(path.join(__dirname, 'uploads')));
+// app.use('/img', express.static(path.join(__dirname, 'uploads')))
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use(express.json());
